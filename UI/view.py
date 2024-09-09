@@ -35,6 +35,8 @@ class View(ft.UserControl):
         self.ddshape = ft.Dropdown(label="Shape",
                                    hint_text="Forma da analizzare per gli avvistamenti.")
 
+        self._controller.fillDD()
+
         self.btn_graph = ft.ElevatedButton(text="Crea Grafo",
                                            tooltip="Crea il grafo del punto 1",
                                            on_click=self._controller.handle_graph)
